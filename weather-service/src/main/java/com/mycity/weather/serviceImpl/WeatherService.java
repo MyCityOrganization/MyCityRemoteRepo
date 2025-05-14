@@ -39,4 +39,9 @@ public class WeatherService implements WeatherServiceInterface{
 	    return new WeatherDTO(location, condition, description, temp);
 	}
 
+	public RestTemplate createRestTemplate() {
+	    return new RestTemplate();
+	}
+
+
 }
